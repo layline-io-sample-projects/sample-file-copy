@@ -1,0 +1,37 @@
+{
+  "@type" : "processorInput/stream",
+  "assetClass" : "processorInput",
+  "assetType" : "stream",
+  "uuid" : "85b7b45b-dd49-413c-914e-becfb732db47",
+  "name" : "Input",
+  "description" : null,
+  "baseUuid" : null,
+  "resources" : null,
+  "outputPort" : {
+    "modifier" : "add",
+    "uuid" : "61b0d3c7-01f0-4cf2-990e-271d4969a3e5",
+    "name" : "Output -1",
+    "description" : null
+  },
+  "failureHandling" : {
+    "streamRetry" : {
+      "maxRetries" : 1,
+      "minBackoff" : 0,
+      "maxBackoff" : null
+    },
+    "eventRetry" : {
+      "maxRetries" : 1,
+      "minBackoff" : 0,
+      "maxBackoff" : null,
+      "retryFailedHandling" : null
+    }
+  },
+  "shutdownGracePeriod" : null,
+  "abortGracePeriod" : null,
+  "sourceUuid" : "7cbc8bb0-8194-43ef-9368-537c54c9cc63",
+  "formatUuid" : "3f1fb8a9-2351-48de-ba16-e809c82d391b",
+  "compressionMode" : null,
+  "streamSupervisionType" : null,
+  "streamRetry" : null,
+  "isInstance" : true
+}

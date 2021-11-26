@@ -1,0 +1,63 @@
+{
+  "@type" : "workflow",
+  "assetClass" : "workflow",
+  "assetType" : "workflow",
+  "uuid" : "b0dbd4ba-c7dd-4a11-88b9-1a828a1feeee",
+  "name" : "SampleFileCopy",
+  "description" : null,
+  "baseUuid" : null,
+  "totalTarget" : null,
+  "weight" : null,
+  "processorInput" : {
+    "modifier" : "add",
+    "uuid" : "c9cfc781-888e-419d-9065-b0738bcd1163",
+    "ref" : "85b7b45b-dd49-413c-914e-becfb732db47",
+    "loc" : {
+      "x" : 157.0,
+      "y" : 133.0
+    },
+    "links" : [
+      {
+        "modifier" : null,
+        "uuid" : "bb30bb9e-38d4-4cda-8e76-10a54cd6d2cf",
+        "name" : "Inpu... -> Prin...",
+        "sourcePort" : "61b0d3c7-01f0-4cf2-990e-271d4969a3e5",
+        "destNode" : "de316b57-a166-41de-95ea-c482645d0df1",
+        "destPort" : "4e391618-01e4-4d57-a2e0-45675f7735df"
+      }
+    ]
+  },
+  "requiredRoles" : null,
+  "resources" : null,
+  "processors" : [
+    {
+      "modifier" : "add",
+      "uuid" : "09c57567-9ce7-44e3-8535-cc6454bb13f3",
+      "ref" : "2ce27eda-da68-4448-b6eb-ffcd5bb85050",
+      "loc" : {
+        "x" : 666.0,
+        "y" : 131.0
+      },
+      "links" : [ ]
+    },
+    {
+      "modifier" : "add",
+      "uuid" : "de316b57-a166-41de-95ea-c482645d0df1",
+      "ref" : "c880af8f-cf06-4431-8787-74ed0860402d",
+      "loc" : {
+        "x" : 407.0,
+        "y" : 135.0
+      },
+      "links" : [
+        {
+          "modifier" : null,
+          "uuid" : "b17766e7-0a82-49a8-b35c-69768351a5dc",
+          "name" : "Prin... -> Outp...",
+          "sourcePort" : "6724e8f9-7cd1-4dbd-918e-a61110c9bfe9",
+          "destNode" : "09c57567-9ce7-44e3-8535-cc6454bb13f3",
+          "destPort" : "47d26e21-2a35-4d01-8bdb-197c2c61401b"
+        }
+      ]
+    }
+  ]
+}

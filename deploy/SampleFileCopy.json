@@ -1,0 +1,23 @@
+{
+  "@type" : "deploy/engineConfig",
+  "assetClass" : "deploy",
+  "assetType" : "engineConfig",
+  "uuid" : "b9c9f69c-b3f2-46cb-ba36-ff84f270f974",
+  "name" : "SampleFileCopy",
+  "description" : null,
+  "baseUuid" : null,
+  "tag" : "SampleFileCopy.${build:timestamp}",
+  "tagDescription" : null,
+  "workflowsDeployAll" : null,
+  "workflows" : [
+    {
+      "modifier" : "add",
+      "uuid" : "48f7c60f-49b8-482f-9544-d05b0d8bd57b",
+      "uuidRef" : "b0dbd4ba-c7dd-4a11-88b9-1a828a1feeee"
+    }
+  ],
+  "extensions" : null,
+  "environments" : null,
+  "secrets" : null,
+  "secretTargetKeys" : null
+}

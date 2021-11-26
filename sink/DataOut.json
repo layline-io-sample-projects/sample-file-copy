@@ -1,0 +1,19 @@
+{
+  "@type" : "sink/fileSystem",
+  "assetClass" : "sink",
+  "assetType" : "fileSystem",
+  "uuid" : "4ca557e9-b7e4-4ffb-99c3-aa75eab5b8b3",
+  "name" : "DataOut",
+  "description" : null,
+  "baseUuid" : null,
+  "requiredRoles" : null,
+  "outputDirectory" : "C:/data/out",
+  "outputPrefix" : null,
+  "outputSuffix" : null,
+  "tempDirectory" : null,
+  "tempPrefix" : null,
+  "tempSuffix" : null,
+  "errorDirectory" : null,
+  "errorPrefix" : null,
+  "errorSuffix" : null
+}
