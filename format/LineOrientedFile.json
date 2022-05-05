@@ -3,8 +3,7 @@
   "assetClass" : "format",
   "assetType" : "generic",
   "uuid" : "3f1fb8a9-2351-48de-ba16-e809c82d391b",
+  "checksum" : "62d08f4bf5d7aae70f70e0512725c989492712d0527fb15971651a10bab167f6",
   "name" : "LineOrientedFile",
-  "description" : null,
-  "baseUuid" : null,
   "definition" : "format {\r\n  name = \"LineOrientedFile\"\r\n  description = \"Sample format to read a line oriented file\"\r\n\r\n  start-element = \"File\"\r\n  target-namespace = \"Layline.Formats.LineOrientedFile\"\r\n\r\n  elements = [\r\n    // ### File sequence ###\r\n\r\n    {\r\n      name = \"File\"\r\n      type = \"Sequence\"\r\n      references = [\r\n        {\r\n          name = \"Lines\"\r\n          min-occurs = 0\r\n          max-occurs = \"unlimited\"\r\n          referenced-element = \"Line\"\r\n        }\r\n      ]\r\n    },\r\n\r\n    // ### Line record ###\r\n    {\r\n      name = \"Line\"\r\n      type = \"MultiPart\"\r\n      regular-expression = \"[\\\\x00-\\\\xFF]\"\r\n\r\n      mapping = {\r\n        message = \"Detail\"\r\n        element = \"Line\"\r\n      }\r\n\r\n      parts = [\r\n        {\r\n          name = \"Data\"\r\n          type = \"RegExpr\"\r\n          regular-expression = \".*\"\r\n          value.type = \"Text.String\"\r\n        },\r\n        {\r\n          name = \"EoL\"\r\n          type = \"RegExpr\"\r\n          regular-expression = \"(\\r?\\n)?\"\r\n          value = {\r\n            type = \"Text.String\"\r\n          }\r\n        }\r\n      ]  \r\n    }  \r\n  ]\r\n}\r\n"
 }

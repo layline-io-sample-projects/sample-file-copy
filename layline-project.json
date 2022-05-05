@@ -1,6 +1,6 @@
 {
-  "name" : "SimpleFileCopy",
-  "description" : "",
-  "version" : "",
+  "name" : "SampleFileCopy",
+  "description" : "Sample configuration demonstrating copying a line oriented file",
+  "version" : "1.0",
   "extensions" : [ ]
 }
