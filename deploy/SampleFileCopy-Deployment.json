@@ -1,0 +1,10 @@
+{
+  "@type" : "deploy/deployment",
+  "assetClass" : "deploy",
+  "assetType" : "deployment",
+  "uuid" : "3642e446-b6c7-4c3f-8de2-9d82593b9b7c",
+  "checksum" : "6c7ba94076fec613c94814e0a35b1524c0c05203a0774f39e33c852b5c7c6ceb",
+  "name" : "SampleFileCopy-Deployment",
+  "engineConfig" : "b9c9f69c-b3f2-46cb-ba36-ff84f270f974",
+  "schedulerSettings" : "546800af-34f5-45b3-8bb3-89e143fce317"
+}

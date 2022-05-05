@@ -1,0 +1,20 @@
+{
+  "@type" : "deploy/schedulerSettings",
+  "assetClass" : "deploy",
+  "assetType" : "schedulerSettings",
+  "uuid" : "546800af-34f5-45b3-8bb3-89e143fce317",
+  "checksum" : "1cef3192340d47745940abfb9d1dfdd1bc755106dcdb950737bbb58cc6cbf3d7",
+  "name" : "SampleFileCopy-SchedulerSettings",
+  "workflows" : [
+    {
+      "uuid" : "ce70b178-8f3f-4d68-9bea-c5b4a14daf5a",
+      "modifier" : "add",
+      "workflowUuid" : "b0dbd4ba-c7dd-4a11-88b9-1a828a1feeee",
+      "numberOfInstances" : 1,
+      "defaultNodeMinInstances" : null,
+      "defaultNodeMaxInstances" : null,
+      "roleLimits" : null,
+      "nodeLimits" : null
+    }
+  ]
+}
