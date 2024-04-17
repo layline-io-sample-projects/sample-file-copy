@@ -4,9 +4,6 @@
   "assetType" : "javaScript",
   "uuid" : "c880af8f-cf06-4431-8787-74ed0860402d",
   "name" : "Print",
-  "description" : null,
-  "baseUuid" : null,
-  "resources" : null,
   "inputPorts" : [
     {
       "modifier" : "add",
@@ -23,8 +20,6 @@
       "description" : null
     }
   ],
-  "rollbackOnUncaughtException" : null,
-  "supervision" : null,
   "failureHandling" : {
     "streamRetry" : {
       "maxRetries" : 1,
@@ -38,14 +33,7 @@
       "retryFailedHandling" : null
     }
   },
-  "scriptSource" : null,
-  "scriptLines" : [
-    "function onMessage(message) {",
-    "    stream.logInfo(message.toJson());",
-    "    stream.emit(message, processor.getOutputPort(\"Output-1\"))",
-    "}"
-  ],
-  "arguments" : null,
+  "rootScript" : "src/main/javascript/Print/Print.js",
   "serviceMappings" : [ ],
   "isInstance" : true
 }
