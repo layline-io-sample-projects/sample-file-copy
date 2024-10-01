@@ -4,22 +4,29 @@
   "assetType" : "fileSystem",
   "uuid" : "7cbc8bb0-8194-43ef-9368-537c54c9cc63",
   "name" : "DataIn",
-  "description" : null,
-  "baseUuid" : null,
-  "requiredRoles" : null,
-  "cancelRetryTimeout" : null,
   "pollingConfig" : {
     "@type" : "source/pollable/polling/fixedRate",
     "pollTimeout" : "60",
     "ordering" : "ALPHABETICAL_ASC",
+    "stableTime" : null,
+    "waitForClearance" : null,
+    "reprocessingMode" : null,
     "interval" : "15"
   },
-  "inputDirectory" : "C:/data/in",
-  "doneDirectory" : "C:/data/done",
-  "errorDirectory" : "C:/data/error",
-  "fileFilter" : {
-    "filterRegExpr" : null,
-    "prefixRegExpr" : null,
-    "suffixRegExpr" : null
-  }
+  "folderSetups" : [
+    {
+      "uuid" : "5cf964cd-e582-4044-b68b-1dfb4cb6f3ec",
+      "modifier" : "add",
+      "name" : "Default",
+      "description" : "Automatically migrated from v1 configuration",
+      "inputDirectory" : "C:/data/in",
+      "doneDirectory" : "C:/data/done",
+      "errorDirectory" : "C:/data/error",
+      "fileFilter" : {
+        "filterRegExpr" : null,
+        "prefixRegExpr" : null,
+        "suffixRegExpr" : null
+      }
+    }
+  ]
 }
